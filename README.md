@@ -1,5 +1,8 @@
 # Dyad Angular Template
 
+<img width="1885" height="908" alt="image" src="https://github.com/user-attachments/assets/d97e0dee-42a2-4ed1-b916-0f17cccdd080" />
+
+
 A minimal Angular template for Dyad.sh - a clean starting point for building Angular applications.
 
 ## Overview
