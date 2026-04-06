@@ -37,6 +37,15 @@ import { LucideAngularModule, ExternalLink, Github } from 'lucide-angular';
           </div>
         }
       </div>
+
+      <div class="view-more-container">
+        <a href="https://github.com/devdallagnol" target="_blank" class="btn-view-more glass-card">
+          <span>Ver todos os projetos no GitHub</span>
+          <div class="icon-circle">
+            <lucide-icon name="Github" size="20"></lucide-icon>
+          </div>
+        </a>
+      </div>
     </section>
   `,
   styles: [`
@@ -46,6 +55,7 @@ import { LucideAngularModule, ExternalLink, Github } from 'lucide-angular';
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
       gap: 32px;
+      margin-bottom: 60px;
     }
     .project-card { overflow: hidden; }
     .project-image {
@@ -96,6 +106,55 @@ import { LucideAngularModule, ExternalLink, Github } from 'lucide-angular';
       border-radius: 100px;
       font-weight: 600;
       border: 1px solid rgba(14, 165, 233, 0.2);
+    }
+
+    .view-more-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .btn-view-more {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 12px 12px 12px 32px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      border-radius: 100px;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid var(--glass-border);
+    }
+
+    .btn-view-more:hover {
+      border-color: var(--primary);
+      background: rgba(14, 165, 233, 0.1);
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 10px 30px rgba(14, 165, 233, 0.2);
+    }
+
+    .icon-circle {
+      width: 48px;
+      height: 48px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: transform 0.4s ease;
+    }
+
+    .btn-view-more:hover .icon-circle {
+      transform: rotate(360deg);
+    }
+
+    @media (max-width: 768px) {
+      .btn-view-more {
+        padding: 10px 10px 10px 24px;
+        font-size: 0.9rem;
+      }
     }
   `]
 })
