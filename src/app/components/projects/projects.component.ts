@@ -112,7 +112,7 @@ export class ProjectsComponent {
     {
       title: 'Disney Clone',
       description: 'Interface moderna replicando a experiência do Disney+ com foco em UI/UX.',
-      image: 'assets/github-preview.png',
+      image: 'assets/linkedin-preview.png',
       tags: ['React', 'Styled Components', 'Firebase'],
       github: 'https://github.com/devdallagnol',
       demo: '#'
