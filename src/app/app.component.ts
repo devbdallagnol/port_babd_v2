@@ -30,7 +30,7 @@ import { ContactComponent } from './components/contact/contact.component';
     </main>
     <footer>
       <div class="footer-content">
-        <p>&copy; 2024 Bruno Dall'Agnol. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Bruno Dall'Agnol. Todos os direitos reservados.</p>
         <div class="footer-links">
           <a href="https://github.com/devdallagnol" target="_blank">GitHub</a>
           <a href="https://linkedin.com/in/bruno-a-b-dall-agnol" target="_blank">LinkedIn</a>
