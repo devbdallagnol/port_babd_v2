@@ -18,7 +18,7 @@ import { LucideAngularModule, Menu, X } from 'lucide-angular';
           <a href="#experience" (click)="toggleMenu()">Experiência</a>
           <a href="#projects" (click)="toggleMenu()">Projetos</a>
           <a href="#skills" (click)="toggleMenu()">Skills</a>
-          <a href="#contact" class="btn-primary" (click)="toggleMenu()">Contato</a>
+          <a href="#contact" class="btn-primary nav-btn" (click)="toggleMenu()">Contato</a>
         </div>
 
         <button class="mobile-toggle" (click)="toggleMenu()">
@@ -34,13 +34,13 @@ import { LucideAngularModule, Menu, X } from 'lucide-angular';
       left: 0;
       width: 100%;
       z-index: 1000;
-      padding: 20px 0;
-      transition: all 0.3s ease;
+      padding: 24px 0;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
     nav.scrolled {
-      background: rgba(15, 23, 42, 0.8);
-      backdrop-filter: blur(10px);
-      padding: 12px 0;
+      background: rgba(2, 6, 23, 0.8);
+      backdrop-filter: blur(12px);
+      padding: 16px 0;
       border-bottom: 1px solid var(--glass-border);
     }
     .nav-container {
@@ -54,6 +54,7 @@ import { LucideAngularModule, Menu, X } from 'lucide-angular';
     .logo {
       font-size: 1.5rem;
       font-weight: 800;
+      letter-spacing: -0.02em;
     }
     .nav-links {
       display: flex;
@@ -64,11 +65,22 @@ import { LucideAngularModule, Menu, X } from 'lucide-angular';
       color: var(--text-muted);
       text-decoration: none;
       font-weight: 500;
-      transition: color 0.2s;
+      transition: all 0.3s ease;
+      font-size: 0.95rem;
     }
-    .nav-links a:hover {
-      color: var(--text);
+    .nav-links a:hover:not(.btn-primary) {
+      color: var(--primary);
     }
+    
+    /* Ajuste específico para o botão de contato na nav */
+    .nav-links a.nav-btn {
+      color: #ffffff !important; /* Força o branco puro */
+      padding: 10px 24px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      box-shadow: 0 4px 15px rgba(14, 165, 233, 0.2);
+    }
+
     .mobile-toggle {
       display: none;
       background: none;
@@ -88,8 +100,10 @@ import { LucideAngularModule, Menu, X } from 'lucide-angular';
         flex-direction: column;
         justify-content: center;
         transition: 0.3s;
+        border-left: 1px solid var(--glass-border);
       }
       .nav-links.active { right: 0; }
+      .nav-links a.nav-btn { width: 80%; text-align: center; }
     }
   `]
 })
