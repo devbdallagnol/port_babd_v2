@@ -12,13 +12,13 @@ import { FormsModule } from '@angular/forms';
       <div class="contact-container glass-card">
         <div class="contact-info">
           <h2>Vamos <span class="gradient-text">Conversar?</span></h2>
-          <p>Estou sempre aberto a novas oportunidades e colaborações. Vamos construir algo incrível juntos!</p>
+          <p>Estou sempre aberto a novas oportunidades e colaborações técnicas. Vamos construir algo incrível juntos!</p>
           
           <div class="info-items">
             <div class="info-item">
               <div class="icon-box"><lucide-icon name="Mail"></lucide-icon></div>
               <div>
-                <p class="label">E-mail</p>
+                <p class="label">E-mail Profissional</p>
                 <p class="value">bruno.agnol&#64;hotmail.com</p>
               </div>
             </div>
@@ -54,39 +54,45 @@ import { FormsModule } from '@angular/forms';
     .contact-container {
       display: grid;
       grid-template-columns: 1fr 1.2fr;
-      padding: 60px;
-      gap: 60px;
+      padding: 80px;
+      gap: 80px;
     }
-    h2 { font-size: 3rem; margin-bottom: 20px; }
-    .contact-info p { color: var(--text-muted); margin-bottom: 40px; }
+    h2 { font-size: 3.5rem; margin-bottom: 24px; font-weight: 800; }
+    .contact-info p { color: var(--text-muted); margin-bottom: 48px; font-size: 1.1rem; }
     .info-items { display: flex; flex-direction: column; gap: 32px; }
-    .info-item { display: flex; gap: 20px; align-items: center; }
+    .info-item { display: flex; gap: 24px; align-items: center; }
     .icon-box {
-      width: 56px;
-      height: 56px;
-      background: rgba(99, 102, 241, 0.1);
-      border-radius: 16px;
+      width: 64px;
+      height: 64px;
+      background: rgba(14, 165, 233, 0.1);
+      border-radius: 18px;
       display: flex;
       align-items: center;
       justify-content: center;
       color: var(--primary);
+      border: 1px solid rgba(14, 165, 233, 0.2);
     }
-    .label { font-size: 0.875rem; color: var(--text-muted); }
-    .value { font-weight: 600; }
-    .contact-form { display: flex; flex-direction: column; gap: 20px; }
+    .label { font-size: 0.875rem; color: var(--text-muted); margin-bottom: 4px; }
+    .value { font-weight: 600; font-size: 1.1rem; }
+    .contact-form { display: flex; flex-direction: column; gap: 24px; }
     input, textarea {
       width: 100%;
-      padding: 16px;
-      background: rgba(255, 255, 255, 0.05);
+      padding: 18px;
+      background: rgba(15, 23, 42, 0.8);
       border: 1px solid var(--glass-border);
-      border-radius: 12px;
+      border-radius: 14px;
       color: white;
       outline: none;
-      transition: border-color 0.2s;
+      transition: all 0.3s ease;
+      font-size: 1rem;
     }
-    input:focus, textarea:focus { border-color: var(--primary); }
+    input:focus, textarea:focus { 
+      border-color: var(--primary);
+      background: rgba(15, 23, 42, 1);
+      box-shadow: 0 0 20px rgba(14, 165, 233, 0.1);
+    }
     @media (max-width: 1024px) {
-      .contact-container { grid-template-columns: 1fr; padding: 40px; }
+      .contact-container { grid-template-columns: 1fr; padding: 40px; gap: 60px; }
     }
   `]
 })

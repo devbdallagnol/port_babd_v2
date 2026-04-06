@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LucideAngularModule, Github, Linkedin, Download, ChevronDown } from 'lucide-angular';
+import { LucideAngularModule, Github, Linkedin, Download, ChevronDown, Code, Database } from 'lucide-angular';
 
 @Component({
   selector: 'app-hero',
@@ -14,14 +14,14 @@ import { LucideAngularModule, Github, Linkedin, Download, ChevronDown } from 'lu
           Bruno A. B. <span class="gradient-text">Dall'Agnol</span>
         </h1>
         <p class="subtitle">
-          Full Stack Developer | Data Analysis Specialist | Tech Innovator
+          Full Stack Developer | Data Analysis Specialist
         </p>
         <p class="description">
-          Transformando dados complexos em soluções digitais elegantes. Especialista em React, Node.js, Python e SQL com foco em inovação e performance.
+          Especialista em transformar dados complexos em soluções digitais de alta performance. Foco em React, Node.js e Engenharia de Dados.
         </p>
         
         <div class="cta-group">
-          <a href="#projects" class="btn-primary">Ver Projetos</a>
+          <a href="#projects" class="btn-primary">Explorar Projetos</a>
           <div class="social-links">
             <a href="https://github.com/devdallagnol" target="_blank" class="glass-card social-btn">
               <lucide-icon name="Github"></lucide-icon>
@@ -73,30 +73,21 @@ import { LucideAngularModule, Github, Linkedin, Download, ChevronDown } from 'lu
       display: grid;
       grid-template-columns: 1.2fr 0.8fr;
       align-items: center;
-      gap: 40px;
+      gap: 60px;
       position: relative;
-    }
-    .badge {
-      background: rgba(99, 102, 241, 0.1);
-      color: var(--primary);
-      padding: 8px 16px;
-      border-radius: 100px;
-      font-size: 0.875rem;
-      font-weight: 600;
-      display: inline-block;
-      margin-bottom: 24px;
-      border: 1px solid rgba(99, 102, 241, 0.2);
     }
     h1 {
       font-size: 4.5rem;
       line-height: 1.1;
       margin-bottom: 16px;
       font-weight: 800;
+      letter-spacing: -0.02em;
     }
     .subtitle {
       font-size: 1.5rem;
       color: var(--text-muted);
       margin-bottom: 24px;
+      font-weight: 500;
     }
     .description {
       font-size: 1.125rem;
@@ -115,12 +106,12 @@ import { LucideAngularModule, Github, Linkedin, Download, ChevronDown } from 'lu
       gap: 12px;
     }
     .social-btn {
-      width: 48px;
-      height: 48px;
+      width: 52px;
+      height: 52px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 12px;
+      border-radius: 14px;
       color: var(--text);
     }
     .stats {
@@ -144,8 +135,8 @@ import { LucideAngularModule, Github, Linkedin, Download, ChevronDown } from 'lu
     }
     .image-container {
       position: relative;
-      width: 400px;
-      height: 400px;
+      width: 420px;
+      height: 420px;
     }
     .profile-img {
       width: 100%;
@@ -154,6 +145,7 @@ import { LucideAngularModule, Github, Linkedin, Download, ChevronDown } from 'lu
       border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
       animation: morph 8s ease-in-out infinite;
       border: 4px solid var(--glass-border);
+      box-shadow: 0 0 50px rgba(14, 165, 233, 0.1);
     }
     @keyframes morph {
       0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
@@ -162,22 +154,24 @@ import { LucideAngularModule, Github, Linkedin, Download, ChevronDown } from 'lu
     }
     .floating-card {
       position: absolute;
-      padding: 12px 20px;
+      padding: 14px 24px;
       display: flex;
       align-items: center;
       gap: 12px;
       animation: float 4s ease-in-out infinite;
+      font-weight: 600;
     }
-    .card-1 { top: 10%; left: -20%; animation-delay: 0s; }
-    .card-2 { bottom: 20%; right: -10%; animation-delay: 2s; }
+    .card-1 { top: 10%; left: -15%; animation-delay: 0s; }
+    .card-2 { bottom: 20%; right: -5%; animation-delay: 2s; }
     .icon-box {
-      width: 32px;
-      height: 32px;
+      width: 36px;
+      height: 36px;
       background: var(--primary);
-      border-radius: 8px;
+      border-radius: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
+      color: white;
     }
     .scroll-indicator {
       position: absolute;
@@ -193,12 +187,12 @@ import { LucideAngularModule, Github, Linkedin, Download, ChevronDown } from 'lu
       60% { transform: translateY(-5px) translateX(-50%); }
     }
     @media (max-width: 1024px) {
-      .hero { grid-template-columns: 1fr; text-align: center; padding-top: 120px; }
+      .hero { grid-template-columns: 1fr; text-align: center; padding-top: 140px; }
       .hero-content { display: flex; flex-direction: column; align-items: center; }
-      h1 { font-size: 3rem; }
+      h1 { font-size: 3.5rem; }
       .cta-group { flex-direction: column; }
       .stats { justify-content: center; }
-      .image-container { width: 300px; height: 300px; margin-top: 40px; }
+      .image-container { width: 320px; height: 320px; margin-top: 60px; }
     }
   `]
 })

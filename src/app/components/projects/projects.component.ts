@@ -50,20 +50,20 @@ import { LucideAngularModule, ExternalLink, Github } from 'lucide-angular';
     .project-card { overflow: hidden; }
     .project-image {
       position: relative;
-      height: 220px;
+      height: 240px;
       overflow: hidden;
     }
     .project-image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.5s ease;
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     }
     .project-card:hover .project-image img { transform: scale(1.1); }
     .project-overlay {
       position: absolute;
       inset: 0;
-      background: rgba(99, 102, 241, 0.8);
+      background: rgba(14, 165, 233, 0.85);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -73,8 +73,8 @@ import { LucideAngularModule, ExternalLink, Github } from 'lucide-angular';
     .project-card:hover .project-overlay { opacity: 1; }
     .overlay-links { display: flex; gap: 16px; }
     .icon-btn {
-      width: 45px;
-      height: 45px;
+      width: 48px;
+      height: 48px;
       background: white;
       color: var(--primary);
       border-radius: 50%;
@@ -84,17 +84,18 @@ import { LucideAngularModule, ExternalLink, Github } from 'lucide-angular';
       transition: transform 0.2s;
     }
     .icon-btn:hover { transform: scale(1.1); }
-    .project-info { padding: 24px; }
-    .project-info h3 { margin-bottom: 12px; font-size: 1.5rem; }
-    .project-info p { color: var(--text-muted); margin-bottom: 20px; font-size: 0.95rem; }
+    .project-info { padding: 28px; }
+    .project-info h3 { margin-bottom: 12px; font-size: 1.5rem; font-weight: 700; }
+    .project-info p { color: var(--text-muted); margin-bottom: 24px; font-size: 0.95rem; }
     .project-tags { display: flex; flex-wrap: wrap; gap: 8px; }
     .tag {
       font-size: 0.75rem;
-      background: rgba(99, 102, 241, 0.1);
+      background: rgba(14, 165, 233, 0.1);
       color: var(--primary);
-      padding: 4px 12px;
+      padding: 6px 14px;
       border-radius: 100px;
       font-weight: 600;
+      border: 1px solid rgba(14, 165, 233, 0.2);
     }
   `]
 })
