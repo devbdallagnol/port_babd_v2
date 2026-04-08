@@ -40,7 +40,7 @@ import { LucideAngularModule, ExternalLink, Github } from 'lucide-angular';
 
       <div class="view-more-container">
         <a href="https://github.com/devbdallagnol" target="_blank" class="btn-view-more glass-card">
-          <span>Ver todos os projetos no GitHub</span>
+          <span>Ver todos os projetos no GitHub.</span>
           <div class="icon-circle">
             <lucide-icon name="Github" size="20"></lucide-icon>
           </div>
