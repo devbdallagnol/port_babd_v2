@@ -23,7 +23,7 @@ import { LucideAngularModule, Github, Linkedin, Download, ChevronDown, Code, Dat
         <div class="cta-group">
           <a href="#projects" class="btn-primary">Explorar Projetos</a>
           <div class="social-links">
-            <a href="https://github.com/devdallagnol" target="_blank" class="glass-card social-btn">
+            <a href="https://github.com/devbdallagnol" target="_blank" class="glass-card social-btn">
               <lucide-icon name="Github"></lucide-icon>
             </a>
             <a href="https://linkedin.com/in/bruno-a-b-dall-agnol" target="_blank" class="glass-card social-btn">

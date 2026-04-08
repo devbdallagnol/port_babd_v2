@@ -39,7 +39,7 @@ import { LucideAngularModule, ExternalLink, Github } from 'lucide-angular';
       </div>
 
       <div class="view-more-container">
-        <a href="https://github.com/devdallagnol" target="_blank" class="btn-view-more glass-card">
+        <a href="https://github.com/devbdallagnol" target="_blank" class="btn-view-more glass-card">
           <span>Ver todos os projetos no GitHub</span>
           <div class="icon-circle">
             <lucide-icon name="Github" size="20"></lucide-icon>
@@ -163,25 +163,25 @@ export class ProjectsComponent {
     {
       title: 'Dash Fifa 23 (Python)',
       description: 'Dashboard interativo para análise de estatísticas de jogadores do Fifa 23 utilizando Streamlit.',
-      image: 'assets/github-preview.png',
+      image: 'assets/dashboard-fifa-23.png',
       tags: ['Python', 'Streamlit', 'Pandas'],
-      github: 'https://github.com/devdallagnol',
+      github: 'https://github.com/ITDallAgnol/ASIMOV_Dash_Fifa_2023',
       demo: '#'
     },
     {
       title: 'Disney Clone',
       description: 'Interface moderna replicando a experiência do Disney+ com foco em UI/UX.',
-      image: 'assets/linkedin-preview.png',
+      image: 'assets/disney-clone.png',
       tags: ['React', 'Styled Components', 'Firebase'],
-      github: 'https://github.com/devdallagnol',
+      github: 'https://github.com/devbdallagnol/disney-clone',
       demo: '#'
     },
     {
       title: 'Sales Report Dashboard',
       description: 'Sistema de relatórios de vendas com visualização de dados em tempo real.',
-      image: 'assets/github-preview.png',
+      image: 'assets/sales-desktop.png',
       tags: ['Python', 'Plotly', 'Data Analysis'],
-      github: 'https://github.com/devdallagnol',
+      github: 'https://github.com/devbdallagnol/sales_report_st',
       demo: '#'
     }
   ];
